@@ -3,20 +3,92 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="estilo.css">
     <title>Lista de Tarefas com JS</title>
 </head>
+<header>
+    <nav class="menu-navegação">
+        <a class="menu-link" href="#">Sobre</a>
+        <a class="menu-link" href="#Con">Contato</a>
+        <a class="menu-link" href="https://github.com/matheuserol-eng">Meu Github</a>
+    </nav>
+</header>
 
 <body>
-    <form id="todo-form">
-        <fieldset>
-        <label for="title">Nova tarefa</label>
-        <br />
-        <input for="title" name="title" id="title" required />
-        </fieldset>
-        <button type="submit">Adicionar</button>
-    </form>
-    <ul id="todo-list"></ul>
-    
+    <main>
+        <div class="container">
+            <div class="header">
+                <h1>Listas de tarefas do javascript!</h1>
+            </div>
+            <div class="menu"><a href="https://youtube.com"><img src="youtube.png" alt="Youtube"
+                        title="Youtube"></a><br><a href="https://facebook.com"><img src="Facebook.png" alt="Facebook"
+                        title="Facebook"></a><br><a href="https://google.com"><img src="Google.png" alt="Google"
+                        title="Google"></a></div>
+            <div class="content">
+                <p>Olá! Digite logo abaixo as tarefas feitas de javascript e caso queira anular uma tarefa pressione no
+                    quadrado <q>X</q>:</p>
+            </div>
+            <form id="todo-form">
+                <fieldset>
+                    <label for="title">Nova tarefa</label>
+                    <br />
+                    <input for="title" name="title" id="title" required />
+                </fieldset>
+                <button type="submit" class="submit">Adicionar</button>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+        <div class="footer">
+            <h4>Rodapé</h4>
+        </div>
+    </main>
+    <div class="form-container">
+        <h5 class="Contatos" id="Con">
+            FALE CONOSCO!<div class="img-form">
+                <img class="foto" src="emoji.jpeg" alt="emoji" width="100">
+            </div>
+        </h5>
+        <form action="Contrucao.html">
+            <div class="box-form">
+                <div class="form">
+                    <div class="nome-sobrenome">
+                        <label class="formulário" for="nome">Nome e Sobrenome</label>
+                        <div class="nome-sobrenome-input">
+                            <input class="formulário" type="text" placeholder="Nome e sobrenome">
+                        </div>
+                    </div>
+                    <div class="e-mail">
+                        <label class="formulário" for="e-mail">E-mail</label>
+                        <div class="e-mail-input">
+                            <input class="formulário" type="email" id="e-mail" placeholder="Exem:email@gmail.com">
+                        </div>
+                    </div>
+                    <div class="numero">
+                        <label class="formulário" for="numero">Numero</label>
+                        <div class="numero-input">
+                            <input class="formulário" type="tel" placeholder="Telefone">
+                        </div>
+                    </div>
+                    <div class="assunto">
+                        <label class="formulário" for="text">Assunto</label>
+                        <div class="assunto-input">
+                            <textarea class="formulário" name="formulário" id="" cols="30" rows="10"
+                                placeholder="Digite alguma coisa..."></textarea>
+                        </div>
+                    </div>
+                    <div class="enviar-button">
+                        <button class="formulário">enviar</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="Cent"><button class="button button1"><a href="#Top" title="Ir ao topo">Voltar ao topo!</a></button>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
